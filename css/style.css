@@ -1,0 +1,181 @@
+.wallimg {
+    object-fit: cover;
+    object-position: center;
+    height: 60vh;
+    width: 100%;
+}
+
+
+
+@font-face {
+    font-family: 'KARMEN';
+    src: url('font/KARMEN.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Vogue';
+    src: url('font/Vogue.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cinzel';
+    src: url('font/Cinzel-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'CinzelB';
+    src: url('font/Cinzel-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Classyvogueregular';
+    src: url('font/Classyvogueregular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Mermaid';
+    src: url('font/Mermaid1001.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Cinzel', sans-serif;
+    font-weight: 600;
+    display: inline-block;
+    background-color: #FFFFE0;
+    /* font-size: 2em; */
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-family: 'CinzelB', sans-serif;
+}
+
+.resImg {
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+
+.des {
+    font-family: 'Classyvogueregular', sans-serif;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.box-sizing {
+    box-sizing: border-box;
+}
+
+.container-md-fluid {
+    position: relative;
+}
+
+.hidden {
+    display: none;
+  }
+
+.white-icon {
+    color: white !important; /* Change the color to white */
+  }
+
+.container-new {
+    position: relative;
+    display: inline-block;
+}
+
+.image {
+    display: block;
+    width: 20rem;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black with 50% opacity */
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+.overlay:hover {
+    cursor: pointer;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.footer {
+    background-color: maroon !important;
+}
+
+
+
+@media (min-width: 768px) {
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 2em !important;
+    }
+
+    button, a {
+        font-size: 1.2em !important;
+    }
+
+    .footerFont{
+        font-size: 0.7em !important;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        font-size: 1em !important;
+    }
+
+    .footerFont{
+        font-size: 1em !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container-md-fluid {
+        width: 100% !important;
+        height: auto !important;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

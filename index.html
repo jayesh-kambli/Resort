@@ -1,0 +1,203 @@
+<html>
+
+<head>
+    <title>Kill Resort</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/anmStyle.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary p-0"
+            style="min-height: 3em; background-color: maroon !important;">
+            <div class="container-fluid px-4" style="background-color: maroon; height: 100%;">
+                <a class="navbar-brand" href="#"><img class="navbar-brand" href="#" src="img/logo.png"
+                        alt="kill beach resort logo" style="height: 3rem; width: auto;" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav d-flex flex-lg-row flex-md-column">
+                        <li class="nav-item mx-lg-2 mx-md-3">
+                            <a class="nav-link" href="./index.html" style="color: white !important;">Home</a>
+                        </li>
+                        <li class="nav-item mx-lg-2 mx-md-3">
+                            <a class="nav-link" href="./rooms.html" style="color: white !important;">Rooms</a>
+                        </li>
+                        <li class="nav-item mx-lg-2 mx-md-3">
+                            <a class="nav-link" href="#" style="color: white !important;">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="image-container container-fluid p-0 containerForZoom">
+            <img src="img/wallpaper.png" alt="Killa Beach Resort" class="wallimg zoom">
+            <div class="text-overlay d-flex flex-column justify-content-center align-items-center">
+                <h2 class="fade-in">Killa Beach Resort</h2>
+                <p style="letter-spacing: 0.5rem;" class="fade-up">Experience Serenity</p>
+            </div>
+        </div>
+
+        <div class="container-fluid d-flex justify-content-center align-items-center mt-4 px-4">
+            <div class="text-center row container-fluid d-flex justify-content-center align-items-center rounded p-3"
+                style="background-color: maroon;">
+                <div class="col-2 d-flex flex-column justify-content-center align-items-center">
+                    <span class="material-icons mb-2 white-icon">wifi</span>
+                    <small class="m-0 white-icon">Free<br>Wi-Fi</small>
+                </div>
+                <div class="col-2 d-flex flex-column justify-content-center align-items-center">
+                    <span class="material-icons mb-2 white-icon">restaurant</span>
+                    <small class="m-0 white-icon">on-site<br>restaurant</small>
+                </div>
+                <div class="col-2 d-flex flex-column justify-content-center align-items-center">
+                    <span class="material-icons mb-2 white-icon">water_drop</span>
+                    <small class="m-0 white-icon">24/7<br>Water</small>
+                </div>
+                <div class="col-2 d-flex flex-column justify-content-center align-items-center">
+                    <span class="material-icons mb-2 white-icon">bolt</span>
+                    <small class="m-0 white-icon">Electricity<br>Backup</small>
+                </div>
+                <div class="col-2 d-flex flex-column justify-content-center align-items-center">
+                    <span class="material-icons mb-2 white-icon">local_parking</span>
+                    <small class="m-0 white-icon">Safe<br>parking</small>
+                </div>
+                <div class="col-2 d-flex flex-column justify-content-center align-items-center">
+                    <span class="material-icons mb-2 white-icon">sports_soccer</span>
+                    <small class="m-0 white-icon">children<br>playzone</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-3" class="d-flex flex-column justify-content-center align-items-center" id="mainDiv">
+            <div class="container-fluid mt-5" style="width: 90%;">
+                <hr class="my-5">
+
+                <div class="row" style="min-height: 30vh;">
+                    <div class="col-md-12 col-lg-8 my-md-3 d-flex flex-column justify-content-center box-sizing">
+                        <h3 class="mb-5" id="resortHeading" style="display: none;">Sea-Facing Resort in Malvan, Chivla
+                            Beach</h3>
+                        <p class="des" id="resortDesc" style="display: none;">Experience bliss at our sea-facing resort
+                            in Malvan, Maharashtra, India. Enjoy
+                            uninterrupted water views and a tranquil escape. Our resort offers 24/7 water availability,
+                            geyser-equipped rooms, and generator backup to ensure a seamless stay, even during power
+                            outages common in Malvan. Indulge in complimentary Wi-Fi access, attentive staff service,
+                            and delectable cuisine at our on-site restaurant, all at competitive pricing. Book your
+                            coastal retreat now!
+                        </p>
+                        <a id="resortBtn" href="./rooms.html"
+                            class="btn rounded-pill d-flex justify-content-start align-items-center bold p-0"
+                            style="display: none !important; background-color: rgba(0,0,0,0); border: 0px;"><u>Rooms
+                                Info <ion-icon name="arrow-forward-outline" class="ms-3"></ion-icon></u></a>
+                    </div>
+                    <div class="col-md-12 col-lg-4">
+                        <div class="containerForZoom rounded">
+                            <img id="resortImg" class="image rounded" src="img/mainPhoto.jpg"
+                                alt="killa beach resort room" style="width: 100%; height: auto; display: none;">
+                        </div>
+                    </div>
+
+                </div>
+
+                <hr class="my-5 container-fluid">
+
+                <div class="row border-box">
+                    <div class="col-md-12 col-lg-8 my-md-3 d-flex flex-column justify-content-center box-sizing">
+                        <h3 class="mb-5" id="scubaHeading">Experience Thrilling Watersports in Malvan</h3>
+                        <p class="des" id="scubaDesc">Malvan, Maharashtra, is renowned for its watersports scene, and
+                            we're proud to
+                            offer a taste of the excitement! We provide a range of watersports activities, including
+                            scuba diving, parasailing, and snorkeling, tailored for both beginners and experienced
+                            adventurers. Join us for an authentic Malvan experience filled with aquatic thrills and
+                            unforgettable moments.</p>
+                        <a id="scubaBtn"
+                            class="btn rounded-pill d-flex justify-content-start align-items-start bold p-0"
+                            style="background-color: rgba(0,0,0,0); border: 0px;"><u>More Info <ion-icon
+                                    name="arrow-forward-outline" class="ms-3"></ion-icon></u></a>
+                    </div>
+                    <div class="col-md-12 col-lg-4">
+                        <div class="containerForZoom rounded">
+                            <img id="scubaImg" src="img/scuba.jpg" alt="scuba at killa beach resort"
+                                style="width: 100%; height: auto;" class="resImg rounded box-sizing container-md-fluid">
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-5 container-fluid">
+
+                <div class="row border-box">
+                    <div class="col-md-12 col-lg-8 my-md-3 d-flex flex-column justify-content-center box-sizing">
+                        <h3 class="mb-5" id="weddingHeading">Celebrate Your Dream Wedding in Malvan</h3>
+                        <p class="des" id="weddingDesc">Our sea-facing resort in Malvan, Maharashtra, provides the ideal
+                            venue for your dream wedding. Surrounded by stunning ocean views and serene landscapes, we
+                            offer personalized wedding packages designed to make your special day unforgettable. Enjoy
+                            luxurious accommodations, exquisite catering, and expert event planning, all tailored to
+                            your needs. Let our dedicated team handle every detail, ensuring a stress-free and memorable
+                            celebration for you and your guests.</p>
+                        <a id="weddingBtn"
+                            class="btn rounded-pill d-flex justify-content-start align-items-start bold p-0"
+                            style="background-color: rgba(0,0,0,0); border: 0px;"><u>More Info <ion-icon
+                                    name="arrow-forward-outline" class="ms-3"></ion-icon></u></a>
+                    </div>
+                    <div class="col-md-12 col-lg-4">
+                        <div class="containerForZoom rounded">
+                            <img id="weddingImg" src="img/wedding.jpeg" alt="wedding at killa beach resort"
+                                style="width: 100%; height: 22rem;" class="resImg rounded box-sizing container-md-fluid">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+    <footer style="height: 50vh;" class="footer mt-5 box-sizing footerFont">
+        <div class="container-fluid d-flex flex-column justify-content-between align-items-center"
+            style="height: 100%; color: white;">
+
+            <div class="row mt-5" style="min-width: 80%;">
+                <div class="col-md-12 col-lg-8">
+                    <ul>
+                        <p>Locate Us</p>
+                        <li class="d-flex justify-content-start align-items-center mb-22">Maharashtra, Sindhudurg,
+                            <br>Malvan, Chivla Beach, 416606</li>
+                        <li class="d-flex justify-content-start align-items-center"><ion-icon name="navigate-outline"
+                                class="mx-1"></ion-icon>Google Maps : <small><a style="color: #FFFFE0;"
+                                    href="https://maps.app.goo.gl/fifZNbw126zujbPs8" class="mx-1">Malvan, Chivla
+                                    Beach</a></small></li>
+                        <hr class="my-5">
+                        <p>Contact Us</p>
+                        <li class="d-flex justify-content-start align-items-center"><ion-icon name="call-outline"
+                                class="mx-1"></ion-icon>Contact number : <small class="mx-1">02365 - 253605</small></li>
+                        <hr class="my-5">
+                    </ul>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <ul>
+                        <p>Social Media</p>
+                        <li class="d-flex justify-content-start align-items-center"><ion-icon name="logo-instagram"
+                                class="mx-1"></ion-icon> Instagram : <small><a style="color: #FFFFE0;"
+                                    href="https://www.instagram.com/killaresortmalvan/"
+                                    class="mx-1">@killaresortmalvn</a></small></li>
+                        <hr class="my-5">
+                        <p class="">&copy; 2024 Killa Resort. All rights reserved.</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/AnimatorScript.js"></script>
+</body>
+
+</html>
