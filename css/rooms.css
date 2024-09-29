@@ -1,0 +1,34 @@
+.RoomHeading{
+    font-size: 5rem !important; 
+}
+
+.killaCard {
+    width: 100%;
+    height: 100% !important;
+    /* margin: 2rem; */
+    padding: 1rem;
+}
+
+.KillaFeatures {
+    /* font-size: 1rem !important; */
+    font-family: 'BelgianoSerif', sans-serif !important;
+    min-height: 6rem;
+}
+
+.KillaDesc {
+    min-height: 7rem;
+    font-family: 'BelgianoSerif', sans-serif !important;
+}
+
+.checkImg {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.KillaCardImg {
+    border-radius: 0.5rem;
+}
+
+.RoomsNote {
+    font-family: sans-serif !important;
+}

@@ -13,6 +13,11 @@
 }
 
 @font-face {
+    font-family: 'BelgianoSerif';
+    src: url('font/BelgianoSerif.ttf') format('truetype');
+}
+
+@font-face {
     font-family: 'Vogue';
     src: url('font/Vogue.ttf') format('truetype');
 }
@@ -88,11 +93,12 @@ body {
 
 .hidden {
     display: none;
-  }
+}
 
 .white-icon {
-    color: white !important; /* Change the color to white */
-  }
+    color: white !important;
+    /* Change the color to white */
+}
 
 .container-new {
     position: relative;
@@ -136,8 +142,23 @@ body {
     background-color: maroon !important;
 }
 
+.floating-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-icon,
+.google-maps-icon,
+.call-us-icon img {
+    display: block;
+    margin-bottom: 2rem;
+}
 
 
+
+/* pc */
 @media (min-width: 768px) {
 
     body,
@@ -150,25 +171,37 @@ body {
         font-size: 2em !important;
     }
 
-    button, a {
+    button,
+    a {
         font-size: 1.2em !important;
     }
 
-    .footerFont{
+    .footerFont {
         font-size: 0.7em !important;
     }
 }
 
+/* pc */
 @media (min-width: 992px) {
     body {
         font-size: 1em !important;
     }
 
-    .footerFont{
+    .footerFont {
         font-size: 1em !important;
+    }
+
+    .whatsapp-icon img,
+    .call-us-icon img,
+    .google-maps-icon img {
+        width: 4rem;
+        /* Adjust the icon size */
+        height: 4rem;
+        /* Maintain aspect ratio */
     }
 }
 
+/* mobile */
 @media (min-width: 768px) and (max-width: 991.98px) {
     .container-md-fluid {
         width: 100% !important;
@@ -178,4 +211,29 @@ body {
         margin-right: auto;
         margin-left: auto;
     }
+
+    .whatsapp-icon img,
+    .call-us-icon img,
+    .google-maps-icon img {
+        width: 9rem;
+        /* Adjust the icon size */
+        height: 9rem;
+        /* Maintain aspect ratio */
+    }
 }
+
+@keyframes shake {
+    0%, 100% { transform: translate(0); }
+    10% { transform: translate(-5px, 0); }
+    20% { transform: translate(5px, 0); }
+    30% { transform: translate(-5px, 0); }
+    40% { transform: translate(5px, 0); }
+    50% { transform: translate(0); } /* End the shake before pause */
+    60%, 90% { transform: translate(0); } /* Hold position */
+    70% { transform: translate(0); }
+    80% { transform: translate(0); }
+  }
+  
+  .whatsapp-icon {
+    animation: shake 1.5s infinite; /* Apply shake animation only to WhatsApp icon */
+  }
